@@ -1,6 +1,6 @@
 using HarmonyLib;
 
-namespace DeliveryTemperatureLimit
+namespace FasterHorizontalScrolling
 {
     [HarmonyPatch(typeof(KScrollRect))]
     public class KScreenRect_Patch
