@@ -9,7 +9,8 @@ namespace FasterHorizontalScrolling
         [HarmonyPatch(MethodType.Constructor)]
         public static void ctor(ref float ___horizontalScrollInertiaScale)
         {
-            ___horizontalScrollInertiaScale *= 4;
+            if( ___horizontalScrollInertiaScale < 20 )
+                ___horizontalScrollInertiaScale = 20;
         }
     }
 }
